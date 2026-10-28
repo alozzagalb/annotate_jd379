@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alozzagalb-annotate_jd379"
+version = "0.1.0"
+description = "按段落统计标注平台与数据质量工程师·批处理调度与吞吐折中相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "alozzagalb" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://alozzagalb.github.io"
+Repository = "https://github.com/alozzagalb/annotate_jd379"
+Issues = "https://github.com/alozzagalb/annotate_jd379/issues"
+
+[project.scripts]
+annotate_jd379 = "annotate_jd379:main"
+
+[tool.setuptools]
+py-modules = ["annotate_jd379"]
